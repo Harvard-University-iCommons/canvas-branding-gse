@@ -19,6 +19,7 @@
 #course-shopping p{
     font-size: 13px;
     margin: 0;
+    text-align: left;
 }
 
 #course-shopping p.participate-text{ font-size: 16px; }

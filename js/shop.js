@@ -77,8 +77,9 @@ var authorized = $('#unauthorized_message').length > 0 ? false : true;
 
 if (authorized){
 
-  // Verify if we have a current user
-  if (!current_user_id ) {
+  var un = $('ul#identity > li.user_name > a').text();
+
+  if ( !un ) {
     /*
      user is not logged in to Canvas.
      */

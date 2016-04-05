@@ -3,10 +3,10 @@
 
 //temporarily switching the  terms and shopping link to point to Dev/Qa
 
-var allowed_terms = ["69","72","71","38","70"];
-var shopping_tool_url = "https://icommons-tools.tlt.harvard.edu/shopping";    // the url of the shopping tool
-//var allowed_terms = ['179', '595', '596', '603', '487', '569', '1','8','447','591','597', '342'];
-//var shopping_tool_url = "https://icommons-tools.dev.tlt.harvard.edu/shopping";    // the url of the shopping tool
+//var allowed_terms = ["69","72","71","38","70"];
+//var shopping_tool_url = "https://icommons-tools.tlt.harvard.edu/shopping";    // the url of the shopping tool
+var allowed_terms = ['3', '6', '7'];
+var shopping_tool_url = "https://icommons-tools.qa.tlt.harvard.edu/shopping";    // the url of the shopping tool
 
 /*
  get the course number for the canvas course
@@ -77,7 +77,7 @@ var authorized = $('#unauthorized_message').length > 0 ? false : true;
 
 if (authorized){
 
-  var un = $('ul#identity > li.user_name > a').text();
+  var un = $('ul#menu > li> a#global_nav_profile_link > div.menu-item-icon-container > div.ic-avatar >img').attr("alt")
 
   if ( !un ) {
     /*

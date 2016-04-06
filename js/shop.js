@@ -77,9 +77,8 @@ var authorized = $('#unauthorized_message').length > 0 ? false : true;
 
 if (authorized){
 
-  var un = $('ul#menu > li> a#global_nav_profile_link > div.menu-item-icon-container > div.ic-avatar >img').attr("alt")
-
-  if ( !un ) {
+  // check if we have a current user
+  if (!current_user_id ) {
     /*
      user is not logged in to Canvas.
      */
